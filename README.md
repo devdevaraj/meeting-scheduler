@@ -61,6 +61,25 @@ The Vite development server will start on `http://localhost:3000`.
 
 ---
 
+## Running with Docker Compose (Containerized Setup)
+
+You can spin up the entire application stack (**MongoDB**, **Backend API**, and **Frontend UI**) with a single command:
+
+1. **Build and start all services**:
+   ```bash
+   docker compose up --build -d
+   ```
+
+2. **Access the application**:
+   - **Frontend Web UI**: [http://localhost:3000](http://localhost:3000)
+   - **Backend REST API**: [http://localhost:5000/api](http://localhost:5000/api)
+   - **MongoDB Database**: Available on `localhost:27017`
+
+3. **Stop and remove containers**:
+   ```bash
+   docker compose down
+   ```
+
 ## API Reference
 
 | Method | Endpoint | Description |
