@@ -10,7 +10,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ rooms, meetings }) =
   const hoursArray = Array.from({ length: DAY_END_HOUR - DAY_START_HOUR + 1 }, (_, i) => DAY_START_HOUR + i);
 
   return (
-    <div className="card-panel">
+    <div className="card-panel timeline-card">
       <div className="card-header-row">
         <h2 className="card-title">
           <Layers size={20} />
